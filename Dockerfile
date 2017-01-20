@@ -8,6 +8,6 @@ RUN apk add --update bash build-base py2-pip python-dev openssl-dev libffi-dev &
 run pip install --upgrade pip
 run pip install --upgrade requests[security] pyopenssl ndg-httpsclient pyasn1 virtualenv flask zappa
 
-virtualenv /opt/virtualenv/local/env
+virtualenv /app/build/env
 
 CMD ["/bin/bash"]
